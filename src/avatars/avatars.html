@@ -1,16 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko-KR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Avatars 과제</title>
-  <link rel="shortcut icon" href="/src/assets/favicon/likelion.ico" type="image/x-icon" />
-  <link rel="icon" href="/src/assets/favicon/likelion.svg" />
-  <link rel="preload" as="font" href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT-Regular.woff2">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css">
-  <link rel="stylesheet" href="./styles/avatars.css" />
-</head>
-<body>
-  <!-- 여기에 마크업을 구성해 주세요. -->
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avatars 과제</title>
+    <link rel="shortcut icon" href="/src/assets/favicon/likelion.ico" type="image/x-icon" />
+    <link rel="icon" href="/src/assets/favicon/likelion.svg" />
+    <link rel="preload" as="font" href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT-Regular.woff2" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT@2/fonts/static/woff2/SUIT.css" />
+    <link rel="stylesheet" href="./styles/avatars.css" />
+  </head>
+  <body>
+    <!-- 여기에 마크업을 구성해 주세요. -->
+    <div class="avatar-wrapper">
+      <!-- 온라인 회원일 때, -->
+      <div class="avatar-item" id="avatar00">
+        <figure>
+          <img width="64" height="64" src="./images/face1.jpg" alt="" />
+          <figcaption class="sr-only">회원 1님</figcaption>
+        </figure>
+        <div class="avatar-status online" aria-label="온라인 입니다."></div>
+      </div>
+
+      <!-- 오프라인 회원일 때, -->
+      <div class="avatar-item" id="avatar01">
+        <figure>
+          <img width="64" height="64" src="./images/face2.jpg" alt="" />
+          <figcaption class="sr-only">회원 2님</figcaption>
+        </figure>
+        <div class="avatar-status" aria-label="오프라인 입니다."></div>
+      </div>
+
+      <!-- 이하 복사 -->
+      <div class="avatar-item" id="avatar02">
+        <figure>
+          <img width="64" height="64" src="./images/face3.jpg" alt="" />
+          <figcaption class="sr-only">회원 3님</figcaption>
+        </figure>
+        <div class="avatar-status online" aria-label="온라인 입니다."></div>
+      </div>
+      <div class="avatar-item" id="avatar03">
+        <figure>
+          <img width="64" height="64" src="./images/face4.jpg" alt="" />
+          <figcaption class="sr-only">회원 4님</figcaption>
+        </figure>
+        <div class="avatar-status" aria-label="오프라인 입니다."></div>
+      </div>
+      <div class="avatar-item" id="avatar04">
+        <figure>
+          <img width="64" height="64" src="./images/face5.jpg" alt="" />
+          <figcaption class="sr-only">회원 5님</figcaption>
+        </figure>
+        <div class="avatar-status" aria-label="오프라인 입니다."></div>
+      </div>
+      <div class="avatar-item" id="avatar05">
+        <figure>
+          <img width="64" height="64" src="./images/face6.jpg" alt="" />
+          <figcaption class="sr-only">회원 6님</figcaption>
+        </figure>
+        <div class="avatar-status" aria-label="오프라인 입니다."></div>
+      </div>
+      <div class="avatar-item" id="avatar06">
+        <figure>
+          <img width="64" height="64" src="./images/face7.jpg" alt="" />
+          <figcaption class="sr-only">회원 7님</figcaption>
+        </figure>
+        <div class="avatar-status online" aria-label="온라인 입니다."></div>
+      </div>
+      <div class="avatar-item" id="avatar07">
+        <figure>
+          <img width="64" height="64" src="./images/face8.jpg" alt="" />
+          <figcaption class="sr-only">회원 8님</figcaption>
+        </figure>
+        <div class="avatar-status online" aria-label="온라인 입니다."></div>
+      </div>
+    </div>
+  </body>
 </html>
