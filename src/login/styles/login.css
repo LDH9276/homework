@@ -38,11 +38,11 @@ input[type="password"] {
   align-items: center;
 }
 
-.login-form a:focus,
+/* .login-form a:focus,
 .login-form input:focus,
 .login-form button:focus {
   outline: 2px solid var(--naverGreen);
-}
+} */
 
 
 /* 상단 헤더 */
