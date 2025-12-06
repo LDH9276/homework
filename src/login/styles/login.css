@@ -1,0 +1,222 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+
+* {
+  font-family: 'Pretendard', sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --naverGreen: #03CF5D;
+  --silver: #999;
+  --silverLight: #DADADA;
+  --white: #fff;
+  --warningRed: #FF1414;
+  --blackAlpha10: rgba(0, 0, 0, 0.1);
+}
+
+/* 로그인 폼 공통 */
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  height: 48px;
+  padding: 0 12px;
+  border: 1px solid var(--silverLight);
+  border-radius: 0;
+}
+
+.login-form {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.login-form fieldset {
+  display: flex;
+  flex-direction: column;
+  padding: 0;  
+  border: none;
+  align-items: center;
+}
+
+.login-form input:focus,
+.login-form button:focus {
+  outline: 2px solid var(--naverGreen);
+}
+
+
+/* 상단 헤더 */
+.login-header {
+  margin-block-end: 50px;
+}
+
+.login-header a {
+  display: flex;
+  height: 100%;
+  justify-content: center; 
+}
+
+.login-textform-wrap {
+  width: 100%;
+  font-size: 0.875rem;
+}
+
+.input-wrap ~ .input-wrap {
+  margin-block-start: 10px;
+}
+
+.error-msg {
+  display: none;
+  color: var(--warningRed);
+  font-size: 0.75rem;
+  margin-block-start: 5px;
+}
+
+.input-wrap input:user-invalid ~ .error-msg,
+.input-wrap input:not(:placeholder-shown):invalid ~ .error-msg {
+  display: block;
+}
+
+.input-wrap input:user-invalid,
+.input-wrap input:not(:placeholder-shown):invalid {
+  border-color: var(--warningRed);
+}
+
+/* 로그인 버튼 */
+.login-button {
+  display: flex;
+  width: 100%;
+  height: 48px;
+  border: 1px solid var(--blackAlpha10);
+  background: var(--naverGreen);
+  color: var(--white);
+  font-weight: 600;
+  font-size: 1rem;
+  align-items: center;
+  justify-content: center;
+  margin-block-start: 20px;
+  margin-block-end: 10px;
+  cursor: pointer;
+}
+
+/* 로그인 유지 / IP보안 폼 */
+.login-check-wrap {
+  display: flex;
+  width: 100%;
+  font-size: 0.875rem;
+  justify-content: space-between;
+}
+
+/* 상태 유지 체크박스 */
+.login-state-wrap {
+  display: flex;
+  gap: 4px;
+  position: relative;
+  height: 24px;
+  line-height: 24px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.login-state-wrap input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  appearance: none;
+  cursor: pointer;
+}
+
+.login-state-wrap label {
+  user-select: none;
+  cursor: pointer;
+}
+
+.login-state-wrap span {
+  display: flex;
+  align-items: center;
+}
+
+/* 체크박스 이미지 토글 로직 */
+.login-state-wrap input:checked + span > .not-check,
+.login-state-wrap input:not(:checked) + span > .check {
+  display: none;
+}
+
+/* IP보안 */
+.ip-setting-wrap {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.ip-setting-wrap .ip-page {
+  color: var(--silver);
+  text-decoration: none;
+}
+
+.ip-setting-wrap .input-wrap {
+  position: relative;
+}
+
+.ip-setting-wrap .input-wrap input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  appearance: none;
+  cursor: pointer;
+}
+
+.ip-setting-wrap .input-wrap span {
+  display: none;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.ip-setting-wrap .input-wrap span.ip-off {
+  color: var(--silver);
+}
+
+.ip-setting-wrap .input-wrap span.ip-on {
+  color: var(--naverGreen);
+}
+
+/* IP 토글 로직 */
+.ip-setting-wrap .input-wrap input:not(:checked) + label > span.ip-off,
+.ip-setting-wrap .input-wrap input:checked + label > span.ip-on {
+  display: block;
+}
+
+/* 반응형 */
+@media (min-width: 768px) {
+  .login-form {
+    max-width: 460px;
+  }
+}
+
+@media (max-width: 767px) {
+  .login-form{
+    padding: 0 16px;
+  }
+
+  .login-header {
+    margin-block-end: 45px;
+  }
+  
+  .login-header a img {
+    width: auto;
+    height: 32px;
+  }
+
+  .login-check-wrap {
+    justify-content: flex-end;
+  }
+
+  .ip-setting-wrap {
+    display: none;
+  }
+}

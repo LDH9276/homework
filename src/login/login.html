@@ -1,0 +1,78 @@
+<!-- HTML 마크업을 작성해 주세요 -->
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>로그인 예제</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/login.css" />
+    <link rel="stylesheet" href="./styles/a11y.css" />
+    <link rel="stylesheet" href="./styles/best-reset.css" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+  </head>
+  <body>
+    <h1>로그인 예제</h1>
+
+    <form action="" method="post" class="login-form">
+      <fieldset>
+        <legend class="sr-only">로그인</legend>
+
+        <!-- 상단 로고 -->
+        <h2 class="login-header">
+          <a href="#none" aria-label="네이버 메인으로 돌아가기">
+            <img src="./asset/naver-logo.svg" alt="" />
+          </a>
+        </h2>
+
+        <!-- 아이디, 비밀번호 입력폼 -->
+        <div class="login-textform-wrap">
+          <!-- 아이디 입력 -->
+          <div class="input-wrap">
+            <label for="userID" class="sr-only">아이디</label>
+            <input type="email" name="userID" id="userID" placeholder="아이디(이메일)" aria-describedby="err-id" required />
+            <p class="error-msg" id="err-id">아이디는 이메일 형식으로 입력해주세요</p>
+          </div>
+
+          <!-- 패스워드 입력 -->
+          <div class="input-wrap">
+            <label for="userPW" class="sr-only">비밀번호</label>
+            <input type="password" name="userPW" id="userPW" placeholder="비밀번호" minlength="10" aria-describedby="err-pw" required />
+            <p class="error-msg" id="err-pw">비밀번호는 10자리 이상 입력해주세요</p>
+          </div>
+        </div>
+
+        <!-- 로그인 버튼 -->
+        <button type="submit" class="login-button">로그인</button>
+
+        <!-- 로그인 상태 유지, IP보안 -->
+        <div class="login-check-wrap">
+          <!-- 로그인 상태 유지 -->
+          <div class="login-state-wrap">
+            <input type="checkbox" name="loginChek" id="loginChek" />
+            <span aria-hidden="true">
+              <img src="./asset/check-on.svg" alt="" class="check" />
+              <img src="./asset/check-off.svg" alt="" class="not-check" />
+            </span>
+            <label for="loginChek">로그인 상태 유지</label>
+          </div>
+
+          <!-- 우측 아이피 보안 (모바일에는 X) -->
+          <div class="ip-setting-wrap">
+            <!-- IP보안 안내 페이지 -->
+            <a href="" title="IP 보안 안내페이지" target="_blank" class="ip-page">IP 보안</a>
+
+            <!-- IP보안 체크박스 -->
+            <div class="input-wrap">
+              <input type="checkbox" name="secure-ip" id="secure-ip" aria-label="IP 보안 설정" />
+              <label for="secure-ip">
+                <span aria-hidden="true" class="ip-on">ON</span>
+                <span aria-hidden="true" class="ip-off">OFF</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
