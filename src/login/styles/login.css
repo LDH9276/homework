@@ -82,6 +82,13 @@ input[type="password"] {
   border-color: var(--warningRed);
 }
 
+/* 로그인 배치 */
+.login-btn-wrap{
+  display: flex;
+  flex-flow: nowrap column;
+  width: 100%;
+}
+
 /* 로그인 버튼 */
 .login-button {
   display: flex;
@@ -105,6 +112,7 @@ input[type="password"] {
   width: 100%;
   font-size: 0.875rem;
   justify-content: space-between;
+  order: 2;
 }
 
 /* 상태 유지 체크박스 */
