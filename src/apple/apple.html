@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apple Card Layout</title>
+    <link rel="icon" href="./favicon/apple-favicon.svg" />
+    <link rel="icon" href="./favicon/apple-light.svg" media="(prefers-color-scheme: light)" />
+    <link rel="icon" href="./favicon/apple-dark.svg" media="(prefers-color-scheme: dark)" />
+    <link rel="apple-touch-icon" href="./favicon/apple-favicon.svg" />
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/apple.css" />
+
+    <!-- 메타태그 -->
+    <meta name="description" content="접근성을 고려한 시맨틱 코드와 CSS 속성을 이용한 애플 메인페이지 샘플 과제제작." />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://ldh9276.github.io/homework/src/apple/apple.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="멋사 프론트엔드 16기 이동헌 - 4주차 과제(애플 메인페이지 샘플 제작)" />
+    <meta property="og:description" content="접근성을 고려한 시맨틱 코드와 CSS 속성을 이용한 로그인 폼 과제제작." />
+    <meta property="og:image" content="https://ldh9276.github.io/homework/src/apple/favicon/og.webp?ver=202512062013" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="ldh9276.github.io" />
+    <meta property="twitter:url" content="https://ldh9276.github.io/homework/src/apple/apple.html" />
+    <meta name="twitter:title" content="멋사 프론트엔드 16기 이동헌 - 4주차 과제(로그인 폼 제작)" />
+    <meta name="twitter:description" content="접근성을 고려한 시맨틱 코드와 CSS 속성을 이용한 로그인 폼 과제제작." />
+    <meta name="twitter:image" content="https://ldh9276.github.io/homework/src/apple/favicon/og.webp?ver=202512062013" />
+  </head>
+  <body>
+    <!-- 아이패드 프로 -->
+    <div class="product-grid-wrapper">
+      <div class="product-wrap" style="--base-color: var(--white); --grid-col: 1 / -1">
+        <h2 class="product-name">iPad Pro</h2>
+        <p class="product-descript">놀라우리만치 얇다.<br />엄청나게 강력하다.</p>
+        <p class="product-notice">출시일 추후 공개</p>
+        <div class="product-btn-wrap">
+          <a href="/" rel="noopener noreferrer" class="product-btn fill" aria-label="iPad Pro 더 알아보기">
+            <span>더 알아보기</span>
+          </a>
+          <a href="/" rel="noopener noreferrer" class="product-btn" aria-label="iPad Pro 가격보기">
+            <span>가격보기</span>
+          </a>
+        </div>
+        <div class="product-img-wrap">
+          <figure
+            role="img"
+            style="--bg-desktop: image-set(url(/src/apple/products/ipad_pro_wide.jpeg) 1x, url(/src/apple/products/ipad_pro_wide_2x.jpeg) 2x); --bg-mobile: image-set(url(/src/apple/products/ipad_pro.jpeg) 1x, url(/src/apple/products/ipad_pro_2x.jpeg) 2x)"
+            aria-label="iPad Pro의 OLED 디스플레이를 보여주는 이미지"
+          ></figure>
+        </div>
+      </div>
+
+      <!-- 아이패드 에어 -->
+      <div class="product-wrap" style="--base-color: var(--black); --grid-col: 1 / -1">
+        <h2 class="product-name">iPad air</h2>
+        <p class="product-descript">두 가지 사이즈. 더 빠른 칩<br />무엇이든 거뜬하게.</p>
+        <p class="product-notice">출시일 추후 공개</p>
+        <div class="product-btn-wrap">
+          <a href="/" rel="noopener noreferrer" class="product-btn fill" aria-label="iPad air 더 알아보기">
+            <span>더 알아보기</span>
+          </a>
+          <a href="/" rel="noopener noreferrer" class="product-btn" aria-label="iPad air 가격보기">
+            <span>가격보기</span>
+          </a>
+        </div>
+        <div class="product-img-wrap">
+          <figure
+            role="img"
+            style="--bg-desktop: image-set(url(/src/apple/products/ipad_air_wide.jpeg) 1x, url(/src/apple/products/ipad_air_wide_2x.jpeg) 2x); --bg-mobile: image-set(url(/src/apple/products/ipad_air.jpeg) 1x, url(/src/apple/products/ipad_air_2x.jpeg) 2x)"
+            aria-label="iPad air의 가벼움을 자유자제로 돋보이는 이미지."
+          ></figure>
+        </div>
+      </div>
+
+      <!-- 아이폰 15 프로 -->
+      <div class="product-wrap" style="--base-color: var(--white); --grid-col: 1 / 3">
+        <h2 class="product-name">iPhone 15 Pro</h2>
+        <p class="product-descript">티타늄. 초강력. 초경량. 초프로</p>
+        <div class="product-btn-wrap">
+          <a href="/" rel="noopener noreferrer" class="product-btn fill" aria-label="iPhone 15 Pro 더 알아보기">
+            <span>더 알아보기</span>
+          </a>
+          <a href="/" rel="noopener noreferrer" class="product-btn" aria-label="iPhone 15 Pro 가격보기">
+            <span>가격보기</span>
+          </a>
+        </div>
+        <div class="product-img-wrap">
+          <figure
+            role="img"
+            style="--bg-desktop: image-set(url(/src/apple/products/iphone15_pro_wide.jpeg) 1x, url(/src/apple/products/iphone15_pro_wide_2x.jpeg) 2x); --bg-mobile: image-set(url(/src/apple/products/iphone15_pro.jpeg) 1x, url(/src/apple/products/iphone15_pro_2x.jpeg) 2x)"
+            aria-label="iPhone 15 Pro의 티타늄 재질이 돋보이는 이미지"
+          ></figure>
+        </div>
+      </div>
+
+      <!-- 아이폰 15 -->
+      <div class="product-wrap" style="--base-color: var(--black)">
+        <h2 class="product-name">iPhone 15</h2>
+        <p class="product-descript">
+          새로운 카메라.<br />새로운 디자인.<br />
+          새로움이 물씬.
+        </p>
+        <div class="product-btn-wrap">
+          <a href="/" rel="noopener noreferrer" class="product-btn fill" aria-label="iPhone 15 더 알아보기">
+            <span>더 알아보기</span>
+          </a>
+          <a href="/" rel="noopener noreferrer" class="product-btn" aria-label="iPhone 15 가격보기">
+            <span>가격보기</span>
+          </a>
+        </div>
+        <div class="product-img-wrap">
+          <figure
+            role="img"
+            style="--bg-desktop: image-set(url(/src/apple/products/iphone15.jpeg) 1x, url(/src/apple/products/iphone15_2x.jpeg) 2x); --bg-mobile: image-set(url(/src/apple/products/iphone15.jpeg) 1x, url(/src/apple/products/iphone15_2x.jpeg) 2x)"
+            aria-label="iPhone 15의 카메라가 돋보이는 이미지"
+          ></figure>
+        </div>
+      </div>
+
+      <!-- WATCH -->
+      <div class="product-wrap" style="--base-color: var(--white)">
+        <h2 class="product-name">WATCH</h2>
+
+        <p class="product-descript">보다 똑똑. 보다 또렷. 보다 강력.</p>
+        <div class="product-btn-wrap">
+          <a href="/" rel="noopener noreferrer" class="product-btn fill" aria-label="WATCH 더 알아보기">
+            <span>더 알아보기</span>
+          </a>
+          <a href="/" rel="noopener noreferrer" class="product-btn" aria-label="WATCH 가격보기">
+            <span>가격보기</span>
+          </a>
+        </div>
+        <div class="product-img-wrap">
+          <figure
+            role="img"
+            style="--bg-desktop: image-set(url(/src/apple/products/apple_watch.jpeg) 1x, url(/src/apple/products/apple_watch_2x.jpeg) 2x); --bg-mobile: image-set(url(/src/apple/products/apple_watch.jpeg) 1x, url(/src/apple/products/apple_watch_2x.jpeg) 2x)"
+            aria-label="Apple WATCH 알루미늄, 스테인레스 모델이 교차되는 모습"
+          ></figure>
+        </div>
+      </div>
+
+      <!-- MacBook Air -->
+      <div class="product-wrap" style="--base-color: var(--black)">
+        <h2 class="product-name">MacBook Air</h2>
+        <p class="product-descript">날렵하게. 강력하게. M3답게.</p>
+        <div class="product-btn-wrap">
+          <a href="/" rel="noopener noreferrer" class="product-btn fill" aria-label="MacBook Air 더 알아보기">
+            <span>더 알아보기</span>
+          </a>
+          <a href="/" rel="noopener noreferrer" class="product-btn" aria-label="MacBook Air 가격보기">
+            <span>가격보기</span>
+          </a>
+        </div>
+        <div class="product-img-wrap">
+          <figure
+            role="img"
+            style="--bg-desktop: image-set(url(/src/apple/products/macbook_air.jpeg) 1x, url(/src/apple/products/macbook_air_2x.jpeg) 2x); --bg-mobile: image-set(url(/src/apple/products/macbook_air.jpeg) 1x, url(/src/apple/products/macbook_air_2x.jpeg) 2x)"
+            aria-label="MacBook Air 두 대가 펼쳐저 있는 모습"
+          ></figure>
+        </div>
+      </div>
+
+      <!-- 에어팟 -->
+      <div
+        class="product-wrap"
+        style="--bg-desktop: image-set(url(/src/apple/products/airpods_pro.jpeg) 1x, url(/src/apple/products/airpods_pro_2x.jpeg) 2x); --bg-mobile: image-set(url(/src/apple/products/airpods_pro.jpeg) 1x, url(/src/apple/products/airpods_pro_2x.jpeg) 2x); --base-color: var(--white)"
+      >
+        <h2 class="product-name">airPods Pro</h2>
+        <p class="product-descript">
+          전에 없던 청취 경험.<br />
+          적응형 오디오.
+        </p>
+        <div class="product-btn-wrap">
+          <a href="/" rel="noopener noreferrer" class="product-btn fill" aria-label="airPods Pro 더 알아보기">
+            <span>더 알아보기</span>
+          </a>
+          <a href="/" rel="noopener noreferrer" class="product-btn" aria-label="airPods Pro 가격보기">
+            <span>가격보기</span>
+          </a>
+        </div>
+        <div class="product-img-wrap">
+          <figure
+            role="img"
+            style="--bg-desktop: image-set(url(/src/apple/products/airpods_pro.jpeg) 1x, url(/src/apple/products/airpods_pro_2x.jpeg) 2x); --bg-mobile: image-set(url(/src/apple/products/airpods_pro.jpeg) 1x, url(/src/apple/products/airpods_pro_2x.jpeg) 2x)"
+            aria-label="airPods의 airPod이 각 각 꺼내져 있는 모습"
+          ></figure>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

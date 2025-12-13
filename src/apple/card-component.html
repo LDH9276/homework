@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apple Card Component</title>
+    <link rel="icon" href="./favicon/apple-favicon.svg" />
+    <link rel="apple-touch-icon" href="./favicon/apple-favicon.svg" />
+    <link rel="icon" href="./favicon/apple-light.svg" media="(prefers-color-scheme: light)" />
+    <link rel="icon" href="./favicon/apple-dark.svg" media="(prefers-color-scheme: dark)" />
+    <link href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/variable/woff2/SUIT-Variable.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/card-component.css" />
+  </head>
+  <body>
+    <!-- 카드 컴포넌트 -->
+    <div class="product-wrap" style="--base-color: var(--white); --grid-col: 1 / -1">
+      <h2 class="product-name">iPad Pro</h2>
+      <p class="product-descript">놀라우리만치 얇다.<br />엄청나게 강력하다.</p>
+      <p class="product-notice">출시일 추후 공개</p>
+      <div class="product-btn-wrap">
+        <a href="/" rel="noopener noreferrer" class="product-btn fill" aria-label="iPad Pro 더 알아보기">
+          <span>더 알아보기</span>
+        </a>
+        <a href="/" rel="noopener noreferrer" class="product-btn" aria-label="iPad Pro 가격보기">
+          <span>가격보기</span>
+        </a>
+      </div>
+      <div class="product-img-wrap">
+        <figure
+          role="img"
+          style="--bg-desktop: image-set(url(/src/apple/products/ipad_pro_wide.jpeg) 1x, url(/src/apple/products/ipad_pro_wide_2x.jpeg) 2x); --bg-mobile: image-set(url(/src/apple/products/ipad_pro.jpeg) 1x, url(/src/apple/products/ipad_pro_2x.jpeg) 2x)"
+          aria-label="iPad Pro의 OLED 디스플레이를 보여주는 이미지"
+        ></figure>
+      </div>
+    </div>
+
+    <!-- 버튼 컴포넌트 -->
+    <div class="product-wrap" style="padding: 0; height: auto">
+      <h2 class="product-name">플레이스 홀더</h2>
+      <p class="product-descript">플레이스 홀더</p>
+      <p class="product-notice">플레이스 홀더</p>
+      <div class="product-btn-wrap">
+        <a href="/" rel="noopener noreferrer" class="product-btn fill" aria-label="플레이스 홀더 더 알아보기">
+          <span>더 알아보기</span>
+        </a>
+        <a href="/" rel="noopener noreferrer" class="product-btn" aria-label="플레이스 홀더 가격보기">
+          <span>가격보기</span>
+        </a>
+      </div>
+      <div class="product-img-wrap">
+        <figure style="background: var(--white)" aria-label="플레이스 홀더"></figure>
+      </div>
+    </div>
+
+    <div class="product-wrap" style="padding: 0; height: auto; --base-color: var(--white)">
+      <h2 class="product-name">플레이스 홀더</h2>
+      <figure style="background: var(--black)" aria-label="플레이스 홀더"></figure>
+      <p class="product-descript">플레이스 홀더</p>
+      <p class="product-notice">플레이스 홀더</p>
+      <div class="product-btn-wrap">
+        <a href="/" rel="noopener noreferrer" class="product-btn fill" aria-label="플레이스 홀더 더 알아보기">
+          <span>더 알아보기</span>
+        </a>
+        <a href="/" rel="noopener noreferrer" class="product-btn" aria-label="플레이스 홀더 가격보기">
+          <span>가격보기</span>
+        </a>
+      </div>
+      <div class="product-img-wrap">
+        <figure style="background: var(--black)" aria-label="플레이스 홀더"></figure>
+      </div>
+    </div>
+    <div class="product-wrap" style="--base-color: var(--white)">
+      <div class="product-img-wrap">
+        <figure
+          role="img"
+          style="--bg-desktop: image-set(url(/src/apple/products/ipad_pro_wide.jpeg) 1x, url(/src/apple/products/ipad_pro_wide_2x.jpeg) 2x); --bg-mobile: image-set(url(/src/apple/products/ipad_pro.jpeg) 1x, url(/src/apple/products/ipad_pro_2x.jpeg) 2x)"
+          aria-label="플레이스 홀더"
+        ></figure>
+      </div>
+    </div>
+  </body>
+</html>
