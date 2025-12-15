@@ -54,6 +54,10 @@
       background-size: cover;
       background-repeat: no-repeat;
     }
+
+    @media (width <= 1024px) {
+      figure{background-image: var(--bg-mobile);}
+    }    
   }
 
   @media (width >= 1024px) {
